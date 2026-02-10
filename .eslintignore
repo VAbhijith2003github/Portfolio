@@ -1,0 +1,7 @@
+# Ignore all source files so ESLint does not run over them
+src/
+
+# Also ignore build and public assets
+public/
+build/
+node_modules/

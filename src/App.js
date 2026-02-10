@@ -305,9 +305,9 @@ function App() {
                     to retrieve task and calendar data directly from Notion.
                   </p>
                   <div className="project-footer">
-                    <a href="#" className="btn-secondary disabled">
+                    <button className="btn-secondary" disabled aria-disabled="true">
                       Internal Tool
-                    </a>
+                    </button>
                     <span className="project-status">Automation Engine</span>
                   </div>
                 </div>
