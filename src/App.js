@@ -6,6 +6,7 @@ import quizo_screenshot from "./assets/quizo_screenshot.png";
 
 function App() {
   const [result, setResult] = useState("");
+  const [menuOpen, setMenuOpen] = useState(false);
   const ACCESS_KEY = (process.env.REACT_APP_WEB3_ACCESS_KEY || "").trim();
 
   const isUUID = (val) => {
@@ -57,19 +58,33 @@ function App() {
   return (
     <div className="App">
       <header>
-        <div className="container nav-bar">
+          <div className="container nav-bar">
           <div className="logo">V Abhijith</div>
-          <nav>
-            <a className="nav-link" href="#home">
+          {/* Responsive nav: toggle visible on small screens */}
+          <button
+            className="nav-toggle"
+            aria-controls="primary-navigation"
+            aria-expanded={menuOpen}
+            onClick={() => setMenuOpen((s) => !s)}
+          >
+            <span className="sr-only">Toggle navigation</span>
+            ☰
+          </button>
+
+          <nav
+            id="primary-navigation"
+            className={menuOpen ? "nav-links open" : "nav-links"}
+          >
+            <a className="nav-link" href="#home" onClick={() => setMenuOpen(false)}>
               Home
             </a>
-            <a className="nav-link" href="#about">
+            <a className="nav-link" href="#about" onClick={() => setMenuOpen(false)}>
               About
             </a>
-            <a className="nav-link" href="#projects">
+            <a className="nav-link" href="#projects" onClick={() => setMenuOpen(false)}>
               Projects
             </a>
-            <a className="nav-link" href="#contact">
+            <a className="nav-link" href="#contact" onClick={() => setMenuOpen(false)}>
               Contact
             </a>
           </nav>
