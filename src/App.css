@@ -295,11 +295,23 @@ h1 {
   background: var(--bg-light-dark);
   padding: 30px;
   border-radius: 16px;
-  border: 1px solid var(--border-color);
+  font-size: clamp(1rem, 2.2vw, 1.5rem);
   transition: var(--transition);
 }
 
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  /* Responsive font size for logo */
 .skill-card:hover {
+
+/* If logo becomes an image, make it responsive */
+.logo img {
+  display: block;
+  height: auto;
+  max-height: 48px;
+  width: auto;
+}
   transform: translateY(-8px);
   border-color: var(--accent);
 }
@@ -405,6 +417,12 @@ h1 {
   .stats {
     flex-direction: column;
     gap: 20px;
+  }
+  .nav-bar {
+    padding: 18px 0;
+  }
+  .logo {
+    font-size: clamp(0.95rem, 3.5vw, 1.2rem);
   }
 }
 

@@ -254,7 +254,7 @@ function App() {
                     <strong>React.js</strong> and a{" "}
                     <strong>microservices backend</strong> on{" "}
                     <strong>AWS</strong>. It utilizes <strong>NGINX</strong>,{" "}
-                    <strong>Redis</strong>, and <strong>Apache Kafka</strong>
+                    <strong>Redis</strong>, and <strong>Apache Kafka</strong> 
                     to ensure <strong>high performance</strong> and{" "}
                     <strong>scalable, event-driven communication</strong>. A key
                     highlight is its <strong>Gemini API integration</strong>,
