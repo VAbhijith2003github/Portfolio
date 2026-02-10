@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./app.css";
+import "./App.css";
 import ppic from "./assets/ppic.png";
 import gogrocers_screenshot from "./assets/gogrocers_screenshot.png";
 import quizo_screenshot from "./assets/quizo_screenshot.png";
